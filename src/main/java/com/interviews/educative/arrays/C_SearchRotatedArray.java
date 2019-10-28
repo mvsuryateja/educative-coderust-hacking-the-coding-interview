@@ -2,9 +2,9 @@ package com.interviews.educative.arrays;
 
 public class C_SearchRotatedArray {
 
-	private static int[] INPUT = { 6, 7, 8, 1, 2, 3, 4, 5 };
+	private static final int[] INPUT = { 6, 7, 8, 1, 2, 3, 4, 5 };
 
-	private static int QUERY = 3;
+	private static final int QUERY = 3;
 
 	public static void main(String[] args) {
 		int index = binarySearchOnRotatedArray(INPUT, QUERY);

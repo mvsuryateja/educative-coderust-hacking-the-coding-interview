@@ -2,11 +2,11 @@ package com.interviews.educative.arrays;
 
 public class A_BinarySearch {
 
-	private static int[] INPUT = { 1, 5, 17, 29, 42, 74, 89, 100 };
+	private static final int[] INPUT = { 1, 5, 17, 29, 42, 74, 89, 100 };
 
-	private static int QUERY = 1;
+	private static final int QUERY = 1;
 
-	private static boolean RECURSIVE = true;
+	private static final boolean RECURSIVE = true;
 
 	public static void main(String[] args) {
 		int index = binarySearch(INPUT, QUERY, RECURSIVE);

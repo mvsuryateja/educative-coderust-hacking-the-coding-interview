@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class G_MoveZerosToLeft {
 
-	private static int[] INPUT = { 0, 1, 10, -1, 11, 5, 10, -7, 10, 25, -35 };
+	private static final int[] INPUT = { 1, 0, 10, -1, 11, 5, 0, -7, 10, 25, -35 };
 
 	public static void main(String[] args) {
 		moveZerosToLeft(INPUT);

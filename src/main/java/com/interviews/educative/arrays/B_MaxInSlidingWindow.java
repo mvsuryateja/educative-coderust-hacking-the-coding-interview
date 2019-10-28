@@ -7,9 +7,9 @@ import java.util.List;
 
 public class B_MaxInSlidingWindow {
 
-	private static int[] INPUT = { 10, 6, 9, -3, 23, -1, 34, 56, 67, -1, -4, -8, -2, 9, 10, 34, 67 };
+	private static final int[] INPUT = { 10, 6, 9, -3, 23, -1, 34, 56, 67, -1, -4, -8, -2, 9, 10, 34, 67 };
 
-	private static int WINDOW_SIZE = 3;
+	private static final int WINDOW_SIZE = 3;
 
 	public static void main(String[] args) {
 		List<Integer> result = findMaxInSlidingWindow(INPUT, WINDOW_SIZE);

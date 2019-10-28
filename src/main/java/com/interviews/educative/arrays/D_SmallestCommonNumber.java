@@ -2,9 +2,9 @@ package com.interviews.educative.arrays;
 
 public class D_SmallestCommonNumber {
 
-	private static int[] INPUT1 = new int[] { 1, 6, 10, 14, 50 };
-	private static int[] INPUT2 = new int[] { -1, 6, 7, 8, 50 };
-	private static int[] INPUT3 = new int[] { 0, 6, 7, 10, 25, 30, 40 };
+	private static final int[] INPUT1 = new int[] { 1, 6, 10, 14, 50 };
+	private static final int[] INPUT2 = new int[] { -1, 6, 7, 8, 50 };
+	private static final int[] INPUT3 = new int[] { 0, 6, 7, 10, 25, 30, 40 };
 
 	public static void main(String[] args) {
 		Integer result = getSmallestCommonNumber(INPUT1, INPUT2, INPUT3);

@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class E_RotateArrayByNElements {
 
-	private static int[] INPUT = { 1, 2, 3, 4, 5 };
+	private static final int[] INPUT = { 1, 2, 3, 4, 5 };
 
-	private static int N = 2;
+	private static final int N = 2;
 
 	public static void main(String[] args) {
 		rotateArrayByNElements(INPUT, N);

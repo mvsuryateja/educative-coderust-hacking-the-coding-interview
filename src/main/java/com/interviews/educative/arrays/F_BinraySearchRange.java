@@ -2,9 +2,9 @@ package com.interviews.educative.arrays;
 
 public class F_BinraySearchRange {
 
-	private static int[] INPUT = { 1, 1, 1, 2, 2, 2, 2, 2, 4, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 6, 6 };
+	private static final int[] INPUT = { 1, 1, 1, 2, 2, 2, 2, 2, 4, 4, 4, 4, 5, 5, 5, 6, 6, 6, 6, 6, 6 };
 
-	private static int QUERY = 0;
+	private static final int QUERY = 0;
 
 	public static void main(String[] args) {
 		int low = binarySearchForStartingIndex(INPUT, QUERY);
