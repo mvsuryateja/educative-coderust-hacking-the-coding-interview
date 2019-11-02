@@ -1,5 +1,7 @@
 package com.interviews.educative.arrays;
 
+import com.interviews.educative.model.Tuple;
+
 public class H_MaxSingleSellProfit {
 
 	private static final int[] INPUT = { 1, 2, 3, 4, 3, 2, 1, 2, 5 };
@@ -36,19 +38,4 @@ public class H_MaxSingleSellProfit {
 		return new Tuple<Integer, Integer>(globalSell - globalProfit, globalSell);
 	}
 
-}
-
-class Tuple<X, Y> {
-	public X x;
-	public Y y;
-
-	public Tuple(X x, Y y) {
-		this.x = x;
-		this.y = y;
-	}
-
-	@Override
-	public String toString() {
-		return x + " -> " + y;
-	}
 }
