@@ -17,7 +17,33 @@ public class J_MergeOverlappingIntervals {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(INPUT);
+		ArrayList<Tuple<Integer, Integer>> result = mergeIntervals(INPUT);
+
+		System.out.println(result);
 	}
-	
+
+	private static ArrayList<Tuple<Integer, Integer>> mergeIntervals(ArrayList<Tuple<Integer, Integer>> input) {
+		if (input == null || input.isEmpty()) {
+			return new ArrayList<Tuple<Integer, Integer>>();
+		}
+
+		ArrayList<Tuple<Integer, Integer>> result = new ArrayList<Tuple<Integer, Integer>>();
+
+		Tuple<Integer, Integer> tuple = new Tuple<Integer, Integer>(input.get(0).x, input.get(0).y);
+
+		for (Tuple<Integer, Integer> interval : input) {
+			if (tuple.y >= interval.x) {
+				tuple.y = interval.y;
+				continue;
+			}
+
+			result.add(tuple);
+			tuple = new Tuple<Integer, Integer>(interval.x, interval.y);
+		}
+
+		result.add(tuple);
+
+		return result;
+	}
+
 }
